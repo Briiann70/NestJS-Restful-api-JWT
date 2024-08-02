@@ -6,6 +6,35 @@
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+
+  <p> ## Project Structure and Pattern
+
+This extend takes after a secluded structure, where each module is capable for a particular include or substance. The most modules are:
+
+
+- 'auth': Handles verification and authorization utilizing JWT.
+- 'users': Oversees client information and operations.
+
+### Why this Pattern?
+
+- **Modularity**:
+Setiap modul berdiri sendiri, membuat basis kode lebih terorganisasi dan lebih mudah dipelihara.
+- **Reusability**:
+Modul dapat digunakan kembali dalam proyek lain atau bagian dari proyek yang sama.
+- **Scalability**:
+Struktur proyek memungkinkan penskalaan yang mudah karena fitur-fitur modern dapat disertakan sebagai modul-modul yang terisolasi.
+
+
+###  Authentication
+
+Verifikasi ditangani menggunakan JWT (JSON Web Token). Modul 'auth' memberikan titik akhir untuk login, yang mengembalikan token JWT yang dapat digunakan untuk memverifikasi permintaan lain.
+
+### Testing
+
+End-to-end (e2e) tests are given to guarantee the authentication API works accurately. These tests are found within the 'test' registry and can be run utilizing 'npm run 
+test:e2e'.
+
+ </p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
