@@ -41,7 +41,6 @@ Modul dapat digunakan kembali dalam proyek lain atau bagian dari proyek yang sam
 - **Scalability**:
 Struktur proyek memungkinkan penskalaan yang mudah karena fitur-fitur modern dapat disertakan sebagai modul-modul yang terisolasi.
 
-
 ###  Authentication
 
 Verifikasi ditangani menggunakan JWT (JSON Web Token). Modul 'auth' memberikan titik akhir untuk login, yang mengembalikan token JWT yang dapat digunakan untuk memverifikasi permintaan lain.
